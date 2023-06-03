@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+
+  border: none;
+  text-decoration: none;
+}
+
+:root {
+  --crem: #f2c46d;
+  --dark: #2e2e2e;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2e2e2e;
+  height: 1000px;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  justify-content: space-between;
+  margin: auto;
+  position: fixed;
+  padding: 1rem 7%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+na.scrollink-active {
+  background-color: #f2c46d;
+}
+
+.navbar .logo a img {
+  width: 6rem;
+  float: left;
+}
+
+.navbar .navbar-nav a {
+  /* padding: 1rem 0; */
+  float: left;
+  font-size: 1.1rem;
+  color: rgb(238, 238, 238);
+  font-weight: 100;
+  vertical-align: middle;
+  margin: 0 1.7rem;
+}
