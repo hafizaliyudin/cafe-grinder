@@ -14,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #2e2e2e;
-  height: 1000px;
+  height: 10000px;
 }
 
 .navbar {
@@ -31,9 +31,9 @@ body {
   right: 0;
 }
 
-na.scrollink-active {
+/* nav.scrollink-active {
   background-color: #f2c46d;
-}
+} */
 
 .navbar .logo a img {
   width: 6rem;
@@ -41,11 +41,42 @@ na.scrollink-active {
 }
 
 .navbar .navbar-nav a {
-  /* padding: 1rem 0; */
+  padding: 1rem 0;
   float: left;
   font-size: 1.1rem;
   color: rgb(238, 238, 238);
   font-weight: 100;
   vertical-align: middle;
   margin: 0 1.7rem;
+}
+
+.hero {
+  min-height: 167vh;
+  display: flex;
+  align-items: center;
+  background-image: url(../../Image/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: -webkit-sticky;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 100;
+  color: #ffff;
+  /* margin-left: -6rem; */
+  margin-top: -6rem;
+  /* line-height: 20; */
+}
+
+.hero .content .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--crem);
+  margin-top: 15rem;
 }
