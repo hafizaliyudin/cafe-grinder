@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-
   border: none;
   text-decoration: none;
 }
@@ -13,7 +12,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #2e2e2e;
+  /* background-color: #2e2e2e; */
   height: 10000px;
 }
 
@@ -29,11 +28,14 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 99999;
+  transition: all 0.3s ease;
 }
 
-/* nav.scrollink-active {
+nav.scrollink-active {
   background-color: #f2c46d;
-} */
+  padding: 0.5rem 7%;
+}
 
 .navbar .logo a img {
   width: 6rem;
@@ -66,17 +68,34 @@ h1 {
   font-size: 4.5rem;
   font-weight: 100;
   color: #ffff;
-  /* margin-left: -6rem; */
-  margin-top: -6rem;
-  /* line-height: 20; */
+  /* margin-top: -2rem; */
 }
 
 .hero .content .btn {
-  margin-top: 1rem;
+  margin-top: 30rem;
   display: inline-block;
-  padding: 0.8rem 2.5rem;
+  padding: 0.8rem 3rem;
   font-size: 1rem;
   color: #fff;
   background-color: var(--crem);
-  margin-top: 15rem;
+  text-align: center;
+  margin-left: 16rem;
+}
+
+.hero .content .btn:hover {
+  background-color: #f0c980;
+}
+
+.menu {
+  display: inline;
+  /* position: absolute; */
+  justify-content: center;
+  align-items: center;
+}
+
+.menu #title {
+  color: var(--dark);
+  font-size: 3rem;
+  text-align: center;
+  padding: 4rem;
 }
