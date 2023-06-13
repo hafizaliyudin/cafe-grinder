@@ -246,6 +246,7 @@ h1 {
   align-items: center;
   margin: 0 4rem;
   text-align: center;
+  margin-top: -4rem;
 }
 
 .content-mood img {
@@ -258,4 +259,20 @@ h1 {
   /* line-height: 20; */
   color: var(--dark);
   text-align: center;
+}
+
+.blog {
+  margin: 0 auto;
+  margin-top: 10rem;
+  max-width: 100%;
+}
+
+.blog-content {
+  display: flex;
+  /* position: relative; */
+  padding: 0 20%;
+}
+
+.blog-content .blog-img img {
+  width: 50%;
 }
