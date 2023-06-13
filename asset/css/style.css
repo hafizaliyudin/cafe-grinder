@@ -262,17 +262,43 @@ h1 {
 }
 
 .blog {
-  margin: 0 auto;
-  margin-top: 10rem;
-  max-width: 100%;
+  padding: 7rem 10% 1.4rem;
 }
 
-.blog-content {
+.blog .row {
   display: flex;
-  /* position: relative; */
-  padding: 0 20%;
 }
 
-.blog-content .blog-img img {
-  width: 50%;
+.blog .row .blog-img {
+  flex: 1 1 45rem;
+}
+
+.blog .row .blog-img img {
+  width: 65%;
+  margin-left: 8rem;
+}
+
+.blog .row .blog-content {
+  flex: 1 1 30rem;
+  margin-top: 5px;
+  padding: 0 auto;
+}
+
+.blog-content h3 {
+  color: var(--dark);
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.blog-content h2 {
+  color: var(--dark);
+  font-size: 2rem;
+  font-weight: 100;
+  margin-top: -15px;
+}
+
+.blog-content .descript {
+  font-size: 1rem;
+  color: var(--dark);
+  margin-top: -15px;
 }
