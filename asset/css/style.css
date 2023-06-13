@@ -337,7 +337,7 @@ h1 {
 .contact .content {
   display: flex;
   justify-content: space-around;
-  margin: 0 13rem;
+  margin: 0 10rem;
   padding: 2rem;
 }
 
