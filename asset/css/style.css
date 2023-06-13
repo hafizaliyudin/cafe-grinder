@@ -22,7 +22,7 @@ body {
   margin: 0;
   padding: 0;
   /* background-color: #2e2e2e; */
-  height: 5000px;
+  /* height: 5000px; */
 }
 
 .navbar {
@@ -301,4 +301,41 @@ h1 {
   font-size: 1rem;
   color: var(--dark);
   margin-top: -15px;
+}
+
+.blog-content .little-descript {
+  font-size: 1.2rem;
+  color: var(--dark);
+}
+
+.read-more a {
+  font-size: 1rem;
+  color: var(--dark);
+}
+
+.read-more img {
+  vertical-align: top;
+  width: 1.2rem;
+}
+
+.read-more a:active {
+  background-color: #d3d1d1;
+  text-align: center;
+  width: 10px;
+}
+
+.contact {
+  width: 100%;
+  background-color: var(--dark);
+  min-height: 30vh;
+  margin-top: 5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.contact .content {
+  display: flex;
+  justify-content: center;
 }
