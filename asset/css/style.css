@@ -26,7 +26,7 @@ body {
 }
 
 .navbar {
-  width: 100%;
+  width: 120%;
   display: flex;
   align-items: center;
   background-color: transparent;
@@ -59,11 +59,28 @@ nav.scrollink-active {
   color: rgb(238, 238, 238);
   font-weight: 100;
   vertical-align: middle;
-  margin: 0 1.7rem;
+  margin: 0 2rem;
   font-family: barlow;
 }
 
-.menu-bar {
+.navbar.scrollink-active .navbar-nav a:hover {
+  color: var(--dark);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.2rem solid var(--dark);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+#hamburger-menu {
   display: none;
 }
 
@@ -419,32 +436,30 @@ h1 {
   }
 
   .navbar .navbar-nav {
-    display: flex;
     position: absolute;
-    flex-direction: column;
-    width: 100%;
-    height: 200px;
-    row-gap: 20px;
-    justify-content: center;
-    align-items: center;
-    top: 70px;
-    right: 50%;
-    transform: translateX(50%);
-    opacity: 0;
+    top: 100%;
+    right: -100%;
+    background-color: var(--crem);
+    width: 30rem;
+    height: 100vh;
   }
 
-  .menu-bar {
+  #hamburger-menu {
     display: inline-block;
+    color: #ffffff;
   }
 
-  .menu-bar a {
-    color: #f2f0f0;
+  .navbar .navbar-nav.active {
+    right: 0;
   }
 
   .hero {
     min-height: 100vh;
-    /* background-position: center;
-    margin-top: -45%; */
-    /* background-size: 200%; */
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
   }
 }

@@ -1,4 +1,5 @@
 const nav = document.querySelector("nav");
+const navbarNav = document.querySelector(".navbar-nav");
 
 window.addEventListener("scroll", () => {
   console.log(window.scrollY);
@@ -6,25 +7,12 @@ window.addEventListener("scroll", () => {
   nav.classList.toggle("scrollink-active", windowPosition);
 });
 
-const button = document.getElementById("slide");
+// Hamburger Menu
+const hamburger = document.querySelector("#hamburger-menu");
 
-button.onclick = () => {
-  document.getElementById("scroll").scrollLeft += 700;
-};
-
-// Menu Bar
-const menuBar = document.querySelector("#hamburger");
-const menuNav = document.querySelector(".navbar-nav");
-
-menuBar.addEventListener("click", () => {
-  menuNav.classList.toggle("menu-active");
+document.addEventListener("click", function (a) {
+  if (hamburger.contains(a.target)) {
+    navbarNav.classList.toggle("active");
+  }
+  console.log("text");
 });
-
-// const navbarNav = document.querySelector(".navbar-nav");
-
-// //ketika hamburger di Click
-
-// const menuBar = document.querySelector(".menu-bar");
-// onclick = () => {
-//   navbarNav.classList.toggle("active");
-// };
