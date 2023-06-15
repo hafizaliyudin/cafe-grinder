@@ -11,3 +11,20 @@ const button = document.getElementById("slide");
 button.onclick = () => {
   document.getElementById("scroll").scrollLeft += 700;
 };
+
+// Menu Bar
+const menuBar = document.querySelector("#hamburger");
+const menuNav = document.querySelector(".navbar-nav");
+
+menuBar.addEventListener("click", () => {
+  menuNav.classList.toggle("menu-active");
+});
+
+// const navbarNav = document.querySelector(".navbar-nav");
+
+// //ketika hamburger di Click
+
+// const menuBar = document.querySelector(".menu-bar");
+// onclick = () => {
+//   navbarNav.classList.toggle("active");
+// };
