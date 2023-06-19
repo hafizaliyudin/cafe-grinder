@@ -491,12 +491,55 @@ h1 {
   }
 
   .hero {
+    min-height: 110vh;
+  }
+
+  .description a {
+    padding: 5px 15px;
+  }
+
+  .contact {
+    min-height: 10vh;
+  }
+}
+
+@media (max-width: 660px) {
+  .hero {
     min-height: 100vh;
+  }
+
+  .hero .content .btn {
+    margin-top: 25rem;
+  }
+
+  .page-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact .content {
+    margin: 0 1rem;
+  }
+
+  .email .email-input::placeholder {
+    font-size: 10px;
   }
 }
 
 @media (max-width: 450px) {
   html {
-    font-size: 55%;
+    font-size: 45%;
+  }
+
+  .hero {
+    min-height: 100vh;
+  }
+
+  .hero .content .btn {
+    margin-top: 25rem;
+  }
+
+  .email .email-input::placeholder {
+    font-size: auto;
   }
 }
