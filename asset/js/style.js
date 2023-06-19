@@ -14,5 +14,13 @@ document.addEventListener("click", function (a) {
   if (hamburger.contains(a.target)) {
     navbarNav.classList.toggle("active");
   }
-  console.log("text");
+  console.log("Active");
+});
+
+// click di luar hamburger
+
+document.addEventListener("click", function (e) {
+  if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
+    navbarNav.classList.remove("active");
+  }
 });
