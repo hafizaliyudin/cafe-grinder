@@ -494,6 +494,19 @@ h1 {
     min-height: 110vh;
   }
 
+  .blog .row {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .blog .blog-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
   .description a {
     padding: 5px 15px;
   }
