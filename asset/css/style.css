@@ -461,7 +461,7 @@ h1 {
     background-color: var(--crem);
     width: 30rem;
     height: 100vh;
-    transition: 1.3s;
+    transition: 1.1s;
   }
 
   #hamburger-menu {
@@ -517,6 +517,10 @@ h1 {
 }
 
 @media (max-width: 660px) {
+  html {
+    font-size: 55%;
+  }
+
   .hero {
     min-height: 100vh;
   }
