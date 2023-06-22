@@ -645,4 +645,9 @@ h1 {
   .hero {
     min-height: 100vh;
   }
+
+  .page-content .card {
+    width: 35rem;
+    height: 10rem;
+  }
 }
