@@ -12,6 +12,9 @@
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
 
+    <!-- Animated Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="asset/css/style.css" />
     <link rel="icon" href="Icon/logo.svg" />
@@ -41,7 +44,7 @@
     <!-- Hero Section start -->
     <section class="hero" id="hero">
       <main class="content">
-        <h1>Life begins after Coffee.</h1>
+        <h1 data-aos="fade-right">Life begins after Coffee.</h1>
         <a href="#menu" class="btn">VIEW MENU</a>
       </main>
     </section>
@@ -57,28 +60,28 @@
         grinder.
       </p>
       <div class="page-content">
-        <div class="card">
+        <div class="card" data-aos="zoom-in">
           <img src="image/Gallery 1.jpg" alt="" />
           <div class="description">
             <h2 class="title-content">COFFEE</h2>
             <a href="#menu">VIEW MENU</a>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="zoom-in">
           <img src="Image/Gallery 3.jpg" alt="" />
           <div class="description">
             <h2 class="title-content">BREAKFAST</h2>
             <a href="#menu">VIEW MENU</a>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="zoom-in">
           <img src="Image/Gallery 4.jpg" alt="" class="nth-4" />
           <div class="description">
             <h2 class="title-content">SANDWICH</h2>
             <a href="#menu">VIEW MENU</a>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="zoom-in">
           <img src="Image/Gallery 2.jpg" alt="" />
           <div class="description">
             <h2 class="title-content">JUICE</h2>
@@ -188,7 +191,10 @@
     <script>
       feather.replace();
     </script>
-
     <!-- Java Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
