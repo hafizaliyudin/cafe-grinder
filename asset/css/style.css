@@ -587,7 +587,7 @@ h1 {
 
   .page-content .card {
     width: 35rem;
-    height: 40rem;
+    height: 45rem;
   }
 
   .page-content .card img {
@@ -642,12 +642,39 @@ h1 {
 }
 
 @media (max-width: 370px) {
+  html {
+    font-size: 49%;
+  }
   .hero {
     min-height: 100vh;
   }
 
+  .hero h1 {
+    font-size: 6rem;
+  }
+
+  .hero .content .btn {
+    margin-top: 30rem;
+    padding: 1.5rem 4rem;
+    font-size: 2rem;
+  }
+
+  .menu p {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .menu .end-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+
+  .menu .end-content p {
+    font-size: 2.5rem;
+  }
+
   .page-content .card {
     width: 35rem;
-    height: 10rem;
+    height: 45rem;
   }
 }
