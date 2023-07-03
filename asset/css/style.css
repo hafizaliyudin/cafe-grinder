@@ -19,6 +19,7 @@
 }
 
 body {
+  /* font-family: barlow; */
   margin: 0;
   padding: 0;
   /* background-color: #2e2e2e; */
@@ -302,7 +303,7 @@ h1 {
 }
 
 .blog .row .blog-img {
-  flex: 1 1 45rem;
+  /* flex: 1 1 45rem; */
 }
 
 .blog .row .blog-img img {
@@ -625,15 +626,108 @@ h1 {
 
 @media (max-width: 450px) {
   html {
-    font-size: 45%;
+    font-size: 50%;
   }
 
-  /* .hero {
-    min-height: 1vh;
-  } */
+  .hero {
+    min-height: 100vh;
+  }
+  .hero h1 {
+    font-size: 5rem;
+    text-shadow: 2px 1px 4px #000000;
+  }
+
+  .hero .content .btn {
+    margin-top: 45rem;
+    padding: 1.5rem 4rem;
+    font-size: 2rem;
+  }
+
+  .menu .end-content h1 {
+    font-size: 4rem;
+  }
+
+  .menu .end-content p {
+    font-size: 3rem;
+  }
+
+  .end-content a {
+    padding: 1.5rem 4rem;
+    font-size: 2rem;
+  }
 
   .hero .content .btn {
     margin-top: 25rem;
+  }
+
+  .moods h2 {
+    font-size: 3rem;
+  }
+
+  .content-mood {
+    display: flex;
+    flex-direction: column;
+    line-height: 5;
+  }
+
+  .content-mood img {
+    width: 10rem;
+  }
+
+  .content-mood h3 {
+    font-size: 2.5rem;
+  }
+
+  .blog .row {
+    flex-direction: column;
+  }
+
+  .blog .row .blog-img {
+    justify-content: center;
+    flex: 0;
+  }
+
+  .blog .row .blog-img img {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    height: 35rem;
+    object-fit: cover;
+    object-position: center;
+    margin: 0;
+  }
+
+  .contact .content img {
+    width: 20%;
+  }
+
+  .text-logo {
+    justify-content: center;
+  }
+
+  .text-logo p {
+    font-size: 2rem;
+  }
+
+  .content {
+    flex-direction: column;
+    justify-content: space-around;
+    display: block;
+  }
+
+  .content .email {
+    display: flex;
+    vertical-align: middle;
+  }
+
+  .email h3 {
+    font-size: 2rem;
+  }
+
+  .email .email-and-button {
+    margin: 0 2rem;
+    width: 100%;
+    margin-top: 10px;
   }
 
   .email .email-input::placeholder {
@@ -643,7 +737,7 @@ h1 {
 
 @media (max-width: 370px) {
   html {
-    font-size: 49%;
+    font-size: 50%;
   }
   .hero {
     min-height: 100vh;
@@ -654,14 +748,13 @@ h1 {
   }
 
   .hero .content .btn {
-    margin-top: 30rem;
     padding: 1.5rem 4rem;
     font-size: 2rem;
+    margin-left: 14rem;
   }
 
   .menu p {
     font-size: 3rem;
-    font-weight: bold;
   }
 
   .menu .end-content h1 {
